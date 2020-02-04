@@ -11,7 +11,7 @@ const app = dialogflow({debug: true});
 
 app.intent('get_place', (conv, {location}) => {
       const axios = require('axios');
-      var api_key = "AIzaSyAtlj7_brqeVGS_NOtg1qOWM-afv40cCXw";
+      var api_key = "REDACTED";
       var user_location = JSON.stringify(location["street-address"]);
       var loc = JSON.stringify(location);
       var geo_code = "https://maps.googleapis.com/maps/api/geocode/json?address=" + encodeURIComponent(user_location) + "&region=.ca&key=" + api_key;
